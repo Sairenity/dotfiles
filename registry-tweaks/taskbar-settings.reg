@@ -10,6 +10,11 @@ Windows Registry Editor Version 5.00
 "TraySearchBoxVisible"=dword:00000000
 "TraySearchBoxVisibleOnAnyMonitor"=dword:00000000
 
+; hide the people tray button
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced\People]
+"PeopleBand"=dword:00000000
+
+
 ; hide the task view button
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
 "ShowTaskViewButton"=dword:00000000
@@ -21,3 +26,11 @@ Windows Registry Editor Version 5.00
 ; show labels in taskbar, not just icons
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
 "TaskbarGlomLevel"=dword:00000002
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"MMTaskbarGlomLevel"=dword:00000002
+
+; show icon only on taskbar of the monitor the window is open on
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"MMTaskbarMode"=dword:00000002
+
+
