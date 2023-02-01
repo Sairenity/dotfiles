@@ -1,5 +1,6 @@
 Windows Registry Editor Version 5.00
 
+;######## Task Bar related tweaks ########
 ; use small task bar icons
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
 "TaskbarSmallIcons"=dword:00000001
@@ -34,3 +35,12 @@ Windows Registry Editor Version 5.00
 "MMTaskbarMode"=dword:00000002
 
 
+;######## Explorer tweaks ########
+
+;show file extensions
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"HideFileExt"=dword:00000000
+
+;open explorer on 'this pc' tab
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"LaunchTo"=dword:00000001
