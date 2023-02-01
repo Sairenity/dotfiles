@@ -1,0 +1,77 @@
+{
+    "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+    "blocks": [
+        {
+            "alignment": "left",
+            "segments": [
+                {
+                    "background": "#bf616a",
+                    "foreground": "#ffffff",
+                    "style": "powerline",
+                    "powerline_symbol": "\uE0B0",
+                    "template": " \uE238 ",
+                    "type": "root"
+                },
+                {
+                    "type": "shell",
+                    "style": "powerline",
+                    "powerline_symbol": "\uE0B0",
+                    "template": " {{.Name}} ",
+                    "foreground": "#ffffff",
+                    "background": "#0077c2",
+                    "properties": {
+                        "mapped_shell_names": {
+                            "pwsh": "ps"
+                        }
+                    }
+                },
+                {
+                    "background": "#3b4252",
+                    "foreground": "#ffffff",
+                    "powerline_symbol": "\ue0b0",
+                    "style": "powerline",
+                    "template": " {{ .UserName }}@{{ .HostName }} ",
+                    "type": "session"
+                },
+                {
+                    "background": "#88c0d0",
+                    "foreground": "#3b4252",
+                    "powerline_symbol": "\ue0b0",
+                    "properties": {
+                        "style": "full"
+                    },
+                    "style": "powerline",
+                    "template": " {{ .Path }} ",
+                    "type": "path"
+                },
+                {
+                    "background": "#a3be8c",
+                    "foreground": "#3b4252",
+                    "powerline_symbol": "\ue0b0",
+                    "style": "powerline",
+                    "template": " {{ .HEAD }} ",
+                    "type": "git"
+                },
+                {
+                    "background": "#b48ead",
+                    "foreground": "#3b4252",
+                    "powerline_symbol": "\ue0b0",
+                    "style": "powerline",
+                    "template": " \ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} ",
+                    "type": "python"
+                },
+                {
+                    "background": "#bf616a",
+                    "foreground": "#ffffff",
+                    "powerline_symbol": "\ue0b0",
+                    "style": "powerline",
+                    "template": " \ue20f ",
+                    "type": "exit"
+                }
+            ],
+            "type": "prompt"
+        }
+    ],
+    "final_space": true,
+    "version": 2
+}
