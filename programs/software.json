@@ -41,6 +41,12 @@
 				},
 				{
 					"PackageIdentifier" : "JetBrains.ReSharper"
+				},
+				{
+					"PackageIdentifier": "Git.Git"
+				},
+				{
+					"PackageIdentifier": "GitHub.Cli"
 				}
 			],
 			"SourceDetails" : 
