@@ -8,4 +8,4 @@ Move-Item ~/dotfiles/dotfiles-master ~/.dotfiles
 Remove-Item ~/dotfiles.zip
 Remove-Item ~/dotfiles
 Set-Location ~/.dotfiles
-~/.dotfiles/setup.ps1
+~/.dotfiles/install.ps1
