@@ -1,5 +1,5 @@
-#section - apply registry tweaks
-Push-Location registry-tweaks
+#section - apply explorer tweaks
+Push-Location explorer-tweaks
 .\install.ps1
 Pop-Location
 
