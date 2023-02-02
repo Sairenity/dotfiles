@@ -4,7 +4,7 @@ if($(Get-ExecutionPolicy) -eq "Restricted") {
 
 Invoke-WebRequest -URI "https://github.com/Sairenity/dotfiles/archive/refs/heads/master.zip" -OutFile "~/dotfiles.zip" 
 Expand-Archive -Path ~/dotfiles.zip -DestinationPath ~/dotfiles
-New-Item ~/.dotfiles/ -Force
+New-Item ~/.dotfiles/ -Force -Type "Directory"
 Move-Item ~/dotfiles/dotfiles-master ~/.dotfiles/workdir
 Remove-Item ~/dotfiles.zip
 Remove-Item ~/dotfiles
