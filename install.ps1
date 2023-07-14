@@ -14,7 +14,7 @@ Push-Location powershell
 Pop-Location
 
 #section - install software
-Push-Location Programs
+Push-Location programs
 .\install.ps1
 Pop-Location
 
