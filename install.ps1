@@ -18,3 +18,7 @@ Push-Location programs
 .\install.ps1
 Pop-Location
 
+#section - miscellaneous
+Push-Location miscellaneous
+.\install.ps1
+Pop-Location
