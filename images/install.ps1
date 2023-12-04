@@ -23,7 +23,7 @@ $homeDir = $(Get-Item ~ -Force)
 $homeDir.Attributes = @($homeDir.Attributes, "ReadOnly")
 $homeDirIniContent = @"
         [.ShellClassInfo]
-        IconResource=$(Resolve-Path ~\.dotfiles)\icons\user.ico,0
+        IconResource=C:\Windows\System32\imageres.dll,208
 "@
 $homeDirIniPath = "$homeDir\desktop.ini"
 echo $homeDirIniContent >> $homeDirIniPath
